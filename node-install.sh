@@ -10,12 +10,10 @@ tar -xzf node_exporter-${VERSION}.linux-amd64.tar.gz
 #Copy it to the /usr/local/bin/ folder
 sudo cp node_exporter-${VERSION}.linux-amd64/node_exporter /usr/local/bin/node_exporter
 
-
-
 #   ./rules-node/node-exporter.service.sh
 #   ./
 #Configure Prometheus Node Exporter as a Service, Create a file called node-exporter.service
-sudo ./rules-node/node-exporter.service.sh
+sudo ./configs/node-exporter.service.sh
 
 #Now start and check the service is running.
 systemctl daemon-reload

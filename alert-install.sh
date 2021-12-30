@@ -8,7 +8,7 @@ tar xvfz alertmanager-${VERSION}.linux-amd64.tar.gz
 sudo cp -r . /usr/local/bin/alertmanager
 
 
-sudo ./alert-rules/alert-rules.sh
+sudo ./configs/alert-rules.sh
 
 sudo systemctl daemon-reload
 sudo service alertmanager start

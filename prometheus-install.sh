@@ -12,15 +12,10 @@ sudo cp -r . /usr/local/bin/prometheus
 #Prometheus should now be running.
 #You can visit it at http://[your ip address]:9090
 
-#       ./rules-prometheus/prometheus.service.sh
-#       ./rules-prometheus/prometheus-rules.sh
-#       ./rules-prometheus/prometheus.sh
-
-
 #Configure Prometheus as a Service, Create a file called prometheus.service
-./rules-prometheus/prometheus.service.sh
-./rules-prometheus/prometheus.sh
-./rules-prometheus/prometheus-rules.sh
+./configs/prometheus.service.sh
+./configs/prometheus.sh
+./configs/prometheus-rules.sh
 
 #start Prometheus
 sudo systemctl daemon-reload
