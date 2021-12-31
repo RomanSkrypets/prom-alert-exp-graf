@@ -13,6 +13,5 @@ echo "groups:
           severity: critical
         annotations:
           summary: "Instance [{{ $labels.instance }}] down"
-          description: "[{{ $labels.instance }}] of job [{{ $labels.job }}] has been down for more than 1 minute."
-          " | sudo tee /usr/local/bin/prometheus/prometheus_rules.yml
+          description: "[{{ $labels.instance }}] of job [{{ $labels.job }}] has been down for more than 1 minute." " | sudo tee /usr/local/bin/prometheus/prometheus_rules.yml
 

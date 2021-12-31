@@ -29,8 +29,6 @@ sudo systemctl start grafana-server
 #==	enable service	==#
 sudo systemctl enable grafana-server.service
 #
-clear
-#
 echo "Grafana installation done!"
 #
 #==	show access url	==#

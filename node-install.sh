@@ -16,7 +16,7 @@ sudo cp node_exporter-${VERSION}.linux-amd64/node_exporter /usr/local/bin/node_e
 sudo ./configs/node-exporter.service.sh
 
 #Now start and check the service is running.
-systemctl daemon-reload
+sudo systemctl daemon-reload
 sudo service node-exporter start
 
 echo "Node-exporter successfully installed"
